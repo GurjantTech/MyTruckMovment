@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.truckmovement.mvvm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/truck_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/truck_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.privacy.PrivacyPolicyActivity1"></activity>
+        <activity android:name=".ui.privacy.PrivacyPolicyActivity" />
+        <activity android:name=".ui.awb.AWBActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.register.RegisterActivity" />
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Base.BaseActivity" />
+        <activity android:name=".ui.LogIn.LoginActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:id="@+id/layout"
+    android:layout_margin="@dimen/_16sdp"
+    android:layout_height="@dimen/_80sdp">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/field_name"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Truck Detail"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            >
+        </TextView>
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:tint="@color/colorPrimary"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/truck_detail_icon">
+        </ImageView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

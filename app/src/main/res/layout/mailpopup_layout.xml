@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appname"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:text="@string/changeLangugeEnglishtoGerman"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"></TextView>
+    <LinearLayout
+        android:layout_below="@+id/popup_title"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/englishSelcted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" English"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimary">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/germanBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" German"
+                android:textSize="@dimen/_10sdp"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/black">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/polnischSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Polnisch"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimary">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/turkishSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Turkish"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimary">
+            </RadioButton>
+            <RadioButton
+            android:id="@+id/tschischSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Tschechisch"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/colorPrimary">
+        </RadioButton>
+            <RadioButton
+                android:id="@+id/romanianSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Romanian"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimary">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

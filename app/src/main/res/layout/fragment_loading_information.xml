@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.loadinginformation.LoadingInformationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/truck_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/square_drawable">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/from_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/square_drawable">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/to_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shift_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/truck_detail_layout"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/shift_start"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/register" />
+
+                <CheckBox
+                    android:id="@+id/shift_end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_11sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/cancellation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/braek_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shift_detail_layout"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/braekstart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_11sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/startofLoading" />
+
+                <CheckBox
+                    android:id="@+id/break_end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_11sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/endofLoading" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/braek_layout"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/cargo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/comp_cargo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_11sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/completeCargo" />
+
+                <CheckBox
+                    android:id="@+id/departure"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/departure" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cargo_layout"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/square_drawable"
+                android:padding="@dimen/_3sdp">
+
+                <CheckBox
+                    android:id="@+id/termsConditionBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/termsconditiontext"></CheckBox>
+
+                <TextView
+                    android:id="@+id/openTermsCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/termsConditionBtn"
+                    android:text="@string/termsconditiontext"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_detail_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/round_corner_btn"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/go_next_icon" />
+            </RelativeLayout>
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginStart="@dimen/_20sdp"
+                 android:layout_marginTop="@dimen/_10sdp"
+                 android:layout_marginEnd="@dimen/_20sdp"
+                 android:layout_marginBottom="@dimen/_30sdp"
+                 android:orientation="horizontal"
+                 android:weightSum="2">
+
+                 <TextView
+                     android:id="@+id/navBtn"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginEnd="@dimen/_20sdp"
+                     android:layout_weight="1"
+                     android:background="@drawable/round_corner_btn"
+                     android:gravity="center"
+                     android:padding="@dimen/_5sdp"
+                     android:text="@string/navigation"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_16sdp"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/sendBtn"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_10sdp"
+                     android:layout_weight="1"
+                     android:background="@drawable/round_corner_btn"
+                     android:gravity="center"
+                     android:padding="@dimen/_5sdp"
+                     android:text="@string/send"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_16sdp"
+                     android:textStyle="bold" />
+             </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
